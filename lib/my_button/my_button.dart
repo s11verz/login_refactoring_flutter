@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class MyButton extends StatelessWidget {
   MyButton({this.image, this.text, this.color, this.radius, this.onPressed});
 
-  final Widget? image;
+  final Widget? image; //?를 붙여 nullable 변수 사용 가능
   final Widget? text;
   final Color? color;
   final double? radius;
@@ -18,7 +18,7 @@ class MyButton extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            image!,
+            image!, //null 여부 검사
             text!,
             Opacity(
               opacity: 0.0,
